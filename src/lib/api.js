@@ -22,7 +22,7 @@ export async function submitOrder({ name, phone, city, address, color, quantity 
   const price = product.price
   const total = price * quantity
 
-  const { error } = await supabase.from('orders').insert({
+  const { error } = await supabase.from('orders_togo').insert({
     customer_name: name.trim(),
     customer_phone: phone.trim(),
     address: address.trim(),
