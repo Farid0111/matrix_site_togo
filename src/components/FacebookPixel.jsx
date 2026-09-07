@@ -3,7 +3,7 @@ import { useSite } from '../context/SiteContext'
 
 function FacebookPixel() {
   const { siteContent } = useSite()
-  const pixelId = siteContent?.facebook_pixel_id
+  const pixelId = siteContent?.facebook_pixel_id_togo
 
   useEffect(() => {
     if (!pixelId) {
